@@ -3,8 +3,8 @@
 var IMAGES = { 
     img1: null,
     frames1: 6,
-    w1: 104,
-    h1: 150
+    w1: 32,
+    h1: 32
  };
 
 var sprite = {
@@ -24,7 +24,7 @@ function canvasTag( id, w, h ) {
 
 function imgLoad() {
     IMAGES['img1'] = new Image();
-    IMAGES['img1'].src = "file:///Users/michaelrivera/work/pybomber2/gb_walk.png";
+    IMAGES['img1'].src = "up_strip.bmp";
 }
 
 function main() {    
