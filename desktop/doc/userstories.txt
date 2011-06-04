@@ -1,0 +1,70 @@
+-Iteration 1:
+
+-BM game includes config file that contains all "magic" numbers and global variables. \b Priority 1. \b Hours: 1.
+-Map can be displayed graphically. \b Priority 2. \b Hours: 1.
+-Map contains blocks which can not be walked on or destroyed. \b Priority 3. \b Hours: 1.
+-BomberMan (BM) can move up, down, left, right. \b Priority 4. \b Hours: 1.
+-BM can be controlled by a. keyboard b. computer A.I. (maybe) c. network player. \b Priority 5. \b Hours: 1.
+-BM faces direction moved. \b Priority 6. \b Hours: 1.
+-bombermen can walk over open space, and can occupy the same space. \b Priority 7. \b Hours: 2.
+-Different players' BMs are differentiated by color. \b Priority 8. \b Hours: 2.
+-Two players can control their own bomberman with the same keyboard. \b Priority 9. \b Hours: 5.
+
+-Iteration 2:
+
+-BM can place bombs. \b Priority 10. \b Hours: 1.
+-BM players can walk off a bomb they just placed but can not walk back on it or any other bomb. \b Priority 11. \b Hours: 3.
+-Map contains mutable and immutable objects. \b Priority 12. \b Hours: 1.
+-BM can only place as many bombs as "bomb power-ups" collected plus one. \b Priority 13. \b Hours: 1.
+-Bombs explode after being placed for a finite length of time unless power-up denotes otherwise (i.e. detonator power-up, short fuse virus). Also, Bombs given a default time to live (TTL) \b Priority 14. \b Hours: 2.
+-Bombs explode up, down, left, right. \b Priority 15. \b Hours: 2.
+-Bomb's explosion radius is determined by the individual players' explosion radius. Also, player has a default explosion radius. \b Priority 16. \b Hours: 3.
+-Bomb's explosions radiate outward one square at a time. \b Priority 17. \b Hours: 3.
+-Explosions destroy first object in blast radius. \b Priority 18. \b Hours: 5.
+-Bombs can detonate other bombs. \b Priority 19. \b Hours: 2.
+-Players can be blown up by any bombs explosion. Also, player can walk into an explosion (and would be blown up). \b Priority 20. \b Hours: 2.
+-Player movement is smooth. i.e. bombermen can move between grids. Also, bomberman continues to move as long as key remains down. \b Priority 21. \b Hours: 3.
+-BMan strafes toward nearest grid square when blocked in direction of travel. Threshhold is adjustable. \b Priority 22. \b Hours: 2.
+
+-Iteration 3:
+
+-Up to four players can control their own bomberman at the same time on the same keyboard. (The keyboard would be quite cramped and thus may not be recommended, but it is possible nonetheless.) Keys are configurable for all players. \b Priority ?. \b Hours: 1.
+-When a mutable object is destroyed, it can produce a random power-up in its place. \b Priority 23. \b Hours: 2.
+-BM can collect powerups by walking over them. The power-up is immediately removed from the playing field and takes effect. A power-up can only be used by one bomberman. \b Priority 24. \b Hours: 1.
+-Power-up: RadiusUp - Permanently increase bomberman's bomb blast radius by one block in each direction; effective immediately. \b Priority 25. \b Hours: 1.
+-Power-up: BombUp - Permanently increase number of bombs dropped by player on screen. \b Priority 26. \b Hours: 1.
+-Power-up: SpeedUp - Permanently increase bomberman's speed, capped at 8(distance travelled per game loop). \b Priority 27. \b Hours: 1.
+-Power-up: SuperRadiusUp - Permanently increase bomberman's bomb blast radius to edge of screen in all directions. \b Priority 28. \b Hours: 1.
+-Power-up: Napalm - Temporarily give the bomberman's bombs the ability to destroy every mutable object in its blast radius in all directions. This power-up has a given time limit. \b Priority 29. \b Hours: 1.
+-Power-up: Shield Protection - Protects BM from explosions, upto 3 blasts (only in one dorection?). \b Priority 30. \b Hours: 2.
+-Power-up: Automatic use - power ups collected by player can be used automaticly. \b Priority 31. \b Hours: 1.
+-BM game plays sounds when various events occur. Sounds: bombs exploding, player death, background music, bomb droping. \b Priority 32. \b Hours: 8.
+
+-Iteration 4:
+
+-Power-up (Virus): "The Runs" - BM continuously drops bombs. \b Priority 33. \b Hours: 2.
+-Power-up (Virus): Short Fuse - Bombs explode within __ seconds. \b Priority 34. \b Hours: 1.
+-Power-up (Virus): "Constipation" - BM cannot drop any bombs for a period of __ seconds. \b Priority 35. \b Hours: 1.
+-Virus has time limit of a set amount of time. \b Priority 36. \b Hours: 1.
+-A player can win the game by eliminating all other opponents and remain the only one alive for a minimum amount of time. \b Priority 37. \b Hours: 2.
+-A game is a draw if all remaining players die at the same time or if time runs out. \b Priority 38. \b Hours: 2.
+Start Game: menu to allow players to configure game ie. number of players, controllers used. \b Priority 39. \b Hours: 4.
+-Player Config Screen: allow players to choose their color and name. \b Priority 40. \b Hours: 3.
+-End Game: splash screen to display winner with their name and color. \b Priority 41. \b Hours: 3.
+-Controller input: allow player input from keyboard or a supported game controller. \b Priority 42. \b Hours: 5.
+-Viruses can be "passed" to other players by coming into contact with them. \b Priority 43. \b Hours: 3.
+-Power-up: Kick - BM can move a bomb by kicking it. \b Priority ?. \b Hours: 5.
+-Power-up: Kick (continued) - Kicked bomb continues to move until it hits any object or explodes (snaps to grid before it explodes). \b Priority ?. \b Hours: 3.
+-Sprites are animated. \b Priority 45. \b Hours: 5
+
+-Iteration 5:
+
+-Power-up: Use powerups (non-automatic controls) can only have one at a time. \b Priority 46. \b Hours: 1.
+-Power-up: Remote-Detonated Bomb - Bomb explodes according to player input rather than internal timer. \b Priority 47. \b Hours: 3.
+-Power-up: Punch - BM can move a bomb by punching it.  Punched bomb "jumps" over stationary objects. \b Priority 48. \b Hours: 6.
+
+-Iteration 7:
+
+BM game supports Network play. \b Priority 49. \b Hours: 20
+
+Game menu \b Priority 50. \b Hours: 8

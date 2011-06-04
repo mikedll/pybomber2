@@ -1,0 +1,27 @@
+Instructions to Install Frinkiac-7 Bomberman
+
+
+1. Make sure you have python2.3 installed
+   (if it is already installed skip to step 2)
+   a. Go to http://www.python.org and click on downloads
+   b. Follow online instructions and download python
+
+2. Make sure you have pygame installed
+   (if it is already installed skip to step 3)
+   a.  Go to http://www.pygame.org and click on downloads
+   b.  Follow online instructions and download pygame
+
+3. Make sure you have wxpython installed
+   (if it is already installed skep to step 4)
+   a.  Go to http://www.wxpython.org/download.php
+   b.  Follow online instructions and download wxpython
+
+4. In the shell type tar -xzf bomber.tar.gz. Press Enter.
+
+5. In the shell type cd bomb. Press Enter
+   *Bomberman must be run in the bomb/ directory.
+
+6. Make sure your speakers are on
+
+7. In the shell type ./bomberman.py
+
